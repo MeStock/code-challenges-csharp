@@ -1,4 +1,6 @@
 ﻿using System;
+using System.Collections.Generic;
+
 namespace code_challenges
 {
     /*
@@ -31,9 +33,20 @@ Sample Output:
     */
     public class GradingStudents
     {
-        public GradingStudents()
+        public static List<int> gradingStudents(List<int> grades)
         {
-
+            for (int i = 0; i < grades.Count; i++)
+            {
+                if (grades[i] >= 38)
+                {
+                    int differenceToMakeMultipleOfFive = 5 - (grades[i] % 5);
+                    if (differenceToMakeMultipleOfFive <= 2)
+                    {
+                        grades[i] = grades[i] + differenceToMakeMultipleOfFive;
+                    }
+                }
+            }
+            return grades;
         }
     }
 }
