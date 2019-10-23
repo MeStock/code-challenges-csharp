@@ -22,7 +22,7 @@ namespace code_challenges
     public class ApplesAndOranges
     {
         // Complete the countApplesAndOranges function below.
-        static string countApplesAndOranges(int s, int t, int a, int b, int[] apples, int[] oranges)
+        static string CountApplesAndOranges(int s, int t, int a, int b, int[] apples, int[] oranges)
         {
             int numOfApples = 0;
             int numOfOranges = 0;
